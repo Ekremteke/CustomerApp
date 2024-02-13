@@ -15,3 +15,16 @@ export class AppComponent {
     this.CustomerModel = new Customer();// clear UI
   }
 }
+export class CustomerComponent {
+
+title = 'CustomerApp';
+
+CustomerModel : Customer = new Customer();
+
+CustomerModels :Array<Customer> = new Array<Customer>();
+
+Add() {
+  this.CustomerModels.push(this.CustomerModel);
+  this.CustomerModel = new Customer(); // clear UI
+}
+}
