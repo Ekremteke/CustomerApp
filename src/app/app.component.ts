@@ -10,10 +10,10 @@ export class AppComponent {
   title = 'Week 7 Introduction';
   CustomerModel: Customer = new Customer(); 
   CustomerModels :Array<Customer> = new Array<Customer>();
-  Add(){
-    this.CustomerModels.push(this.CustomerModel);
-    this.CustomerModel = new Customer();// clear UI
-  }
+ Add(){
+ this.CustomerModels.push(this.CustomerModel);
+ this.CustomerModel = new Customer();// clear UI
+}
 }
 export class CustomerComponent {
 
