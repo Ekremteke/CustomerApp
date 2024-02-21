@@ -12,7 +12,7 @@ export class AppComponent {
   CustomerModels :Array<Customer> = new Array<Customer>();
  Add(){
  this.CustomerModels.push(this.CustomerModel);
- this.CustomerModel = new Customer();// clear UI
+ this.CustomerModel = new Customer();
 }
 }
 export class CustomerComponent {
@@ -25,6 +25,6 @@ CustomerModels :Array<Customer> = new Array<Customer>();
 
 Add() {
   this.CustomerModels.push(this.CustomerModel);
-  this.CustomerModel = new Customer(); // clear UI
+  this.CustomerModel = new Customer(); 
 }
 }
